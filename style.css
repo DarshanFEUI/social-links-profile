@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    color: var(--White);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Off-Black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+
+.profile-card {
+    width: 300px;
+    text-align: center;
+    background-color: var(--Dark-Grey);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.profile-card .profile-image {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile-card .profile-title h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 14px;
+}
+
+.profile-card .profile-title h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: var(--Green);
+}
+
+.profile-card p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-links {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.profile-links li {
+    width: 100%;
+    background-color: var(--Off-Black);
+    color: var(--White);
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.profile-links li a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--White);
+    cursor: pointer;
+}
+
+.profile-links li:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
+
+.profile-links li:hover a{
+    color: var(--Off-Black);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; margin-top: 30px; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
